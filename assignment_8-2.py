@@ -1,14 +1,17 @@
+#random num gen
 from random import randrange
-
+#loop value and random num 
 x=1
 numr1=randrange(0,100)
-
+#loop
 while x==1:
-    input1=int(input("Guess the random number: "))
+    #user input 
+    input1=int(input("\nGuess the random number(0-100): "))
+    #boolean
     if input1<numr1:
-        print("Lower than")
+        print("Less than (Go higher)")
     elif input1>numr1:
-        print("Greater than")
+        print("Greater than (Go lower)")
 
     if input1==numr1:
         print("You guessed the number!")
